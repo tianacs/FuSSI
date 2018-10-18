@@ -1,3 +1,7 @@
+// Extract.java
+
+// File to select a subsection of all sequences from a FASTA file and write them to a new file. 
+
 import java.util.ArrayList;
 import java.io.*;
 import java.util.Random;
@@ -12,7 +16,7 @@ public class Extract{
 			extracts[x++] = item.getSequence().substring (open, close+1);
 		}
 		
-		File file = new File ("extracts.fas");
+		File file = new File ("../HIV_Sequences/HIV_rep_171_5UTR_400.fas");
 		try (BufferedWriter bw = new BufferedWriter (new FileWriter(file))){
 	// creates or opens the file (if file already exists it will be overwritten)
 	// to append something to a file open the file with FileWriter(filename,true)
@@ -60,8 +64,8 @@ public class Extract{
 	}
 	
 	public static void main (String[] args) {
-		ArrayList<Sequence> MSA = Import.readin ("../Sequences/HCV_representative_250seq_coevolution.fasta");
-		//extract (MSA, 1200, 1250);
-		shuffle (MSA, 0, 40);	
+		ArrayList<Sequence> MSA = Import.readin ("../HIV_Sequences/HIV_rep_171.fas");
+		extract (MSA, 0, 1000);
+		//shuffle (MSA, 0, 40);	
 	}
 	}	
