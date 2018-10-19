@@ -23,9 +23,14 @@ public class Region {
 		for (Sequence item : MSA) {
 			//extracts[x++] = item.getSequence().substring (gap_begin, gap_end+1);
 			String sub_seq = item.getSequence().substring (structure.getOpen(), structure.getClose()+1);
-			if (extracts.get (sub_seq) == null) {
-				extracts.put (sub_seq, item.getName ());
-				no_seq++;
+			if (!(undetermined (sub_seq))){ 
+				if (extracts.get (sub_seq) == null) {
+					extracts.put (sub_seq, item.getName ());
+					no_seq++;
+				}
+			}
+			else {
+				System.out.println (item.getName()+" conists only of undetermined characters");
 			}
 			//extracts.add (item.getSequence().substring (gap_begin, gap_end+1));
 		}
@@ -57,37 +62,22 @@ public class Region {
 		}
 		//since bw and fw are opened in try block, there is no need to close the files*/
 	}
+	
+	public static boolean undetermined (String string) {
+		for (char c : string.toCharArray ()) {
+			if (c != '-') {
+				return false;
+			}
+		}
+		return true;
+	}
 
 	public static void main (String[] args) {
-		
-		//Fasta items = Fasta.readin ("../Sequences/HCV_Con_Muscle_ali.fas");
-		ArrayList<Sequence> seqs = Import.readin ("../Sequences/HCV_1b_97seq_codon_aligned.fasta");
-		//ArrayList<String> seqs = items.getSeqs();
-		
-		String consensus_gapless = RemoveGaps.remove(seqs.get(0).getSequence());
-		Sequence cons = new Sequence (seqs.get(0).getName (), consensus_gapless);
-		
-		String structure = "UGCGUGGAACCAGAGAAGGGGGGCCGCA";
-		//"UUUCUGCGUCCAACCAGAGAAGGGGGGCCGCAAGCC";
-		//String structure = "GCCAGCCCCCGAUUGGGGGCGACACUCCA";
-			
-		Duo d = new Duo(3709,3854);
-		find (seqs, d, "TestingError2");
-		/*
-		//Testing Map
-		Map<String, String> extracts = new HashMap<String, String> ();
-		extracts.put ("Name1", "seq1");
-		extracts.put ("Name2", "seq2");
-		extracts.put ("Name3", "seq3");
-		extracts.put ("Name4", "seq3");
-		
-		for (Map.Entry<String, String> entry : extracts.entrySet()) {
-			System.out.println (entry.getKey ());
-			System.out.println (entry.getValue ());			
-		}
-		if (extracts.get ("Name5") != null) {
-			System.out.println ("already in ");
-		}*/
+		ArrayList<Sequence> seqs = Import.readin ("../HIV_Sequences/HIV_rep_171_5UTR.fas");
+		Duo d = new Duo (274, 336);
+		String run_ID = "test";
+		find (seqs, d, run_ID);
+
 	}
 }
 	
