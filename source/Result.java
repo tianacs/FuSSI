@@ -100,7 +100,7 @@ class Main {
 		
 		Scanner input = null;
 		try {
-			input = new Scanner (new FileInputStream("Likelihoods_"+args[0]+".txt"));
+			input = new Scanner (new FileInputStream(args[0]));
 		}
 		catch (FileNotFoundException e) {
 			System.out.println ("File not found.");
@@ -151,8 +151,10 @@ class Main {
 		catch (IOException e) {
 			e.printStackTrace ();	
 		}*/
-		ArrayList<Double> graph = new ArrayList<Double> (10174);
-		for (int i = 0; i < 10174; i++) {
+		
+		//set size of the MSA 
+		ArrayList<Double> graph = new ArrayList<Double> (11775);
+		for (int i = 0; i < 11775; i++) {
 			graph.add (0.0);
 		}
 		System.out.println (graph);
@@ -167,10 +169,12 @@ class Main {
 		}
 		System.out.println (graph);
 		System.out.println (graph.get(9199));
-		File graph_points = new File ("Graph_97.csv");
+		System.out.println (graph.get(9208));
+		File graph_points = new File ("Graph_HIV_171.csv");
 		try (BufferedWriter bw = new BufferedWriter (new FileWriter (graph_points))) {
+			bw.write ("Position,Relative_Likelihood\r\n");
 			for (int i = 0; i < graph.size (); i++) {
-				bw.write (i+","+graph.get(i)+"\r\n");
+				bw.write ((i+1)+","+graph.get(i)+"\r\n");
 			}
 		}
 		catch (IOException e) {

@@ -255,6 +255,29 @@ public class FuSSI {
 		}
 		//once all done delete Represenative_Structures, RNAfold_output
 		//should delete likelihood.txt file too, otherwise next run justs adds more to it
+		int size_MSA_sequence = MSA.get(0).getSequence().length();
+		ArrayList<Double> graph = new ArrayList<Double> (size_MSA_sequence);
+		for (int i = 0; i < size_MSA_sequence; i++) {
+			graph.add (0.0);
+		}
+		for (Result item : support_for_structure) {
+			for (int i = (item.getOpen ()-1); i < item.getClose(); i++) {
+				if (graph.get(i) <= item.getRelativeLikelihood ()){
+					graph.set (i, item.getRelativeLikelihood());
+				}
+			}
+		}
+		File graph_points = new File ("Graph_"+run_ID+".csv");
+		try (BufferedWriter bw = new BufferedWriter (new FileWriter (graph_points))) {
+			bw.write ("Position,Relative_Likelihood\r\n");
+			for (int i = 0; i < graph.size (); i++) {
+				bw.write ((i+1)+","+graph.get(i)+"\r\n");
+			}
+		}
+		catch (IOException e) {
+			e.printStackTrace ();
+		}
+
 		
 	}
 }

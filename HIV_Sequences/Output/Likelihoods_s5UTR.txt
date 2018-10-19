@@ -1,0 +1,63 @@
+*******************************************************
+Likelihood for structure at position 270 to 438
+UCUCUCGACGC__AGGACUCGGCUUGCU__GAAGUGCACACAGCAAGAGGCGAGAG_CGGC______GACUGGUGAGUA_CGCCAAA________UUUUUG_______________ACUAGCGGA_GGCUAGA________________________AGGAGAG_A_GA
+................((((..((((((.............))))))...........................))))...........................................................................................
+Likelihood GTR NS: -2049.737627
+Likelihood 16S: -1955.622466
+Constrained 16S model is 74764440176456400000000000000000000000000.00times more likely than NS model
+*******************************************************
+Likelihood for structure at position 115 to 445
+GUGCCC_UCUGUU__GUGUGACUCUGGUAACUAGAGAUCCCUCAGACCA____U_UAG_C_GUGU___AAAAUCUCUAGCAGUGGCGCCCGAACAGGG_ACUUGAAAGCGAAA_____________________GUAGAACCAG___AGA__AGAUCUCUCGACGC__AGGACUCGGCUUGCU__GAAGUGCACACAGCAAGAGGCGAGAG_CGGC______GACUGGUGAGUA_CGCCAAA________UUUUUG_______________ACUAGCGGA_GGCUAGA________________________AGGAGAG_A_GAUGGGUGC
+...........................................................................................................................................................................((((..((((((.............))))))...........................))))..................................................................................................
+Likelihood GTR NS: -4912.442470
+Likelihood 16S: -4837.401091
+Constrained 16S model is 389096042946410300000000000000000.00times more likely than NS model
+*******************************************************
+Likelihood for structure at position 216 to 456
+UUGAAAGCGAAA_____________________GUAGAACCAG___AGA__AGAUCUCUCGACGC__AGGACUCGGCUUGCU__GAAGUGCACACAGCAAGAGGCGAGAG_CGGC______GACUGGUGAGUA_CGCCAAA________UUUUUG_______________ACUAGCGGA_GGCUAGA________________________AGGAGAG_A_GAUGGGUGCGAGAGCGUCAG
+......................................................................((((..((((((.............))))))...........................)))).............................................................................................((.((....)).))..
+Likelihood GTR NS: -3451.337454
+Likelihood 16S: -3362.461377
+Constrained 16S model is 396633885416083850000000000000000000000.00times more likely than NS model
+*******************************************************
+Likelihood for structure at position 271 to 434
+CUCUCGACGC__AGGACUCGGCUUGCU__GAAGUGCACACAGCAAGAGGCGAGAG_CGGC______GACUGGUGAGUA_CGCCAAA________UUUUUG_______________ACUAGCGGA_GGCUAGA________________________AGGAGAG_
+...............((((..((((((.............))))))...........................)))).......................................................................................
+Likelihood GTR NS: -1967.254377
+Likelihood 16S: -1886.587318
+Constrained 16S model is 107958935848552310000000000000000000.00times more likely than NS model
+*******************************************************
+Likelihood for structure at position 2 to 459
+_____________________________________________________________________________________________________________GUGUGUGCCC_UCUGUU__GUGUGACUCUGGUAACUAGAGAUCCCUCAGACCA____U_UAG_CAGUGU___AAAAUCUCUAGCAGUGGCGCCCGAACAGGG_ACUUGAAAGCGAAA_____________________GUAGAACCAG___AGA__AGAUCUCUCGACGC__AGGACUCGGCUUGCU__GAAGUGCACACAGCAAGAGGCGAGAG_CGGC______GACUGGUGAGUA_CGCCAAA________UUUUUG_______________ACUAGCGGA_GGCUAGA________________________AGGAGAG_A_GAUGGGUGCGAGAGCGUCAGUAU
+............................................................................................................................................................................................................................................................................................((((..((((((.............))))))...........................)))).............................................................................................((.((....)).)).....
+Likelihood GTR NS: -6591.049243
+Likelihood 16S: -6499.083768
+Constrained 16S model is 8711607860810144000000000000000000000000.00times more likely than NS model
+*******************************************************
+Likelihood for structure at position 1 to 490
+______________________________________________________________________________________________________________GUGUGUGCCC_UCUGUU__GUGUGACUCUGGUAACUAGAGAUCCCUCAGACCA____U_UAG_CAGUGU___AAAAUCUCUAGCAGUGGCGCCCGAACAGGG_ACUUGAAAGCGAAA_____________________GUAGAACCAG___AGA__AGAUCUCUCGACGC__AGGACUCGGCUUGCU__GAAGUGCACACAGCAAGAGGCGAGAG_CGGC______GACUGGUGAGUA_CGCCAAA________UUUUUG_______________ACUAGCGGA_GGCUAGA________________________AGGAGAG_A_GAUGGGUGCGAGAGCGUCAGUAUUAAGCGGGGGAAAAUUAGAUGCAUGGGAAAA
+.............................................................................................................................................................................................................................................................................................((((..((((((.............))))))...........................)))).............................................................................................((.((....)).))....................................
+Likelihood GTR NS: -7525.358836
+Likelihood 16S: -7438.518363
+Constrained 16S model is 51801010262615920000000000000000000000.00times more likely than NS model
+*******************************************************
+Likelihood for structure at position 114 to 446
+_GUGCCC_UCUGUU__GUGUGACUCUGGUAACUAGAGAUCCCUCAGACCA____U_UAG_C_GUGU___AAAAUCUCUAGCAGUGGCGCCCGAACAGGG_ACUUGAAAGCGAAA_____________________GUAGAACCAG___AGA__AGAUCUCUCGACGC__AGGACUCGGCUUGCU__GAAGUGCACACAGCAAGAGGCGAGAG_CGGC______GACUGGUGAGUA_CGCCAAA________UUUUUG_______________ACUAGCGGA_GGCUAGA________________________AGGAGAG_A_GAUGGGUGCG
+............................................................................................................................................................................((((..((((((.............))))))...........................))))...................................................................................................
+Likelihood GTR NS: -4949.276845
+Likelihood 16S: -4859.713406
+Constrained 16S model is 788691822651634500000000000000000000000.00times more likely than NS model
+*******************************************************
+Likelihood for structure at position 199 to 445
+GCGCCCGAACAGGG_ACUUGAAAGCGAAA_____________________GUAGAACCAG___AGA__AGAUCUCUCGACGC__AGGACUCGGCUUGCU__GAAGUGCACACAGCAAGAGGCGAGAG_CGGC______GACUGGUGAGUA_CGCCAAA________UUUUUG_______________ACUAGCGGA_GGCUAGA________________________AGGAGAG_A_GAUGGGUGC
+.......................................................................................((((..((((((.............))))))...........................))))..................................................................................................
+Likelihood GTR NS: -3519.589235
+Likelihood 16S: -3446.278497
+Constrained 16S model is 68936459959160210000000000000000.00times more likely than NS model
+*******************************************************
+Likelihood for structure at position 136 to 486
+CUCUGGUAACUAGAGAUCCCUCAGACCA____U_UAG_C_GUGU___AAAAUCUCUAGCAGUGGCGCCCGAACAGGG_ACUUGAAAGCGAAA_____________________GUAGAACCAG___AGA__AGAUCUCUCGACGC__AGGACUCGGCUUGCU__GAAGUGCACACAGCAAGAGGCGAGAG_CGGC______GACUGGUGAGUA_CGCCAAA________UUUUUG_______________ACUAGCGGA_GGCUAGA________________________AGGAGAG_A_GAUGGGUGCGAGAGCGUCAGUAUUAAGCGGGGGAAAAUUAGAUGCAUGGG
+......................................................................................................................................................((((..((((((.............))))))...........................)))).............................................................................................((.((....)).))................................
+Likelihood GTR NS: -5588.569686
+Likelihood 16S: -5495.367155
+Constrained 16S model is 30015453726026895000000000000000000000000.00times more likely than NS model

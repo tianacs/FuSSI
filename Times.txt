@@ -11,3 +11,7 @@ java -jar FuSSI.jar ../HIV_Sequences/HIV_rep_171_5UTR_400.fas 5UTR
 Began: 16:46:26
 RNAfold output required 2 sec: 16:46:27
 
+
+Running complete HIV sequences 
+Beging 17:19:53
+RNAfold 
