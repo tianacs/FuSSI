@@ -16,7 +16,7 @@ public class Extract{
 			extracts[x++] = item.getSequence().substring (open, close+1);
 		}
 		
-		File file = new File ("../HIV_Sequences/HIV_rep_171_5UTR_400.fas");
+		File file = new File ("../HIV_Sequences/HIV_rep_171_5UTR.fas");
 		try (BufferedWriter bw = new BufferedWriter (new FileWriter(file))){
 	// creates or opens the file (if file already exists it will be overwritten)
 	// to append something to a file open the file with FileWriter(filename,true)
