@@ -30,7 +30,7 @@ public class Region {
 				}
 			}
 			else {
-				System.out.println (item.getName()+" conists only of undetermined characters");
+				//System.out.println (item.getName()+" conists only of undetermined characters");
 			}
 			//extracts.add (item.getSequence().substring (gap_begin, gap_end+1));
 		}

@@ -42,7 +42,7 @@ public class FuSSI {
 			MSA_location = args[0];
 			run_ID = args[1];
 		} catch (ArrayIndexOutOfBoundsException e) {
-			System.out.println ("FuSSI: specify <location>/<filename> <run_ID>");
+			System.out.println ("FuSSI: specify <location>/<filename> <run_ID> (optional) max_structure_size");
 			System.exit (0);
 		}		
 		ArrayList<Sequence> MSA = Import.readin(MSA_location);
@@ -136,7 +136,7 @@ public class FuSSI {
 		int count = 0;
 		//ArrayList<Duo> support_for_structure = new ArrayList<Duo> ();
 		ArrayList<Result> support_for_structure = new ArrayList<Result> ();
-		System.out.println (duos);
+		//System.out.println (duos);
 		for (Duo structure : duos) {
 			System.out.println ((++count)+"/"+duos.size()+": "+structure);
 			Region.find (MSA, structure, run_ID);
