@@ -62,7 +62,7 @@ public class Region {
 	public static void main (String[] args) {
 		ArrayList<Sequence> seqs = Import.readin ("../HIV_Sequences/HIV_rep_171.fas");
 		//positions in Duo (first position is 0)
-		Duo d = new Duo (3000, 7999);
+		Duo d = new Duo (2000, 2999);
 		String run_ID = "test";
 		find (seqs, d, run_ID);
 

@@ -4,17 +4,17 @@ import java.io.*;
 import java.util.*;
 
 
-public class Runtime {
+public class Taketime {
 	public static void main (String[] args_) {
 	
 		// Test MSA of sequence length 200, 500 (y), 1000, 5000 (y), 10000 (y)
-		String[] files = {};
+		String[] files = {"HIV_171_5000.fas"};
 		
 		for (int i = 0; i < files.length; i++) {
 			long startTime = System.currentTimeMillis ();
 			try {
 				Runtime rt = Runtime.getRuntime();
-				Process p = rt.exec ("java -jar FuSSI.jar ../Runtime_analysis/"+files[i]+" no"+i+" 400");
+				Process p = rt.exec ("java -jar FuSSI.jar ../Runtime_analysis/"+files[i]+" time"+i+" 400");
 				p.waitFor();
 			}
 			catch (Exception e) {
@@ -23,7 +23,8 @@ public class Runtime {
 			}
 			long stopTime = System.currentTimeMillis ();
 			long elapsedTime = stopTime- startTime;
-			System.out.println (elapsedTime);
+			System.out.println ("Run: "+files[i]);
+			System.out.println (elapsedTime+" Milliseconds");
 			System.out.println (elapsedTime/1000.0+" Seconds");
 			System.out.println (elapsedTime/1000.0/60+" Minutes");
 			System.out.println (elapsedTime/1000.0/60/60+" Hours");
