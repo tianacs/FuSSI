@@ -8,8 +8,8 @@ public class Taketime {
 	public static void main (String[] args_) {
 	
 		// Test MSA of sequence length 200, 500 (y), 1000, 5000 (y), 10000 (y)
-		//String[] files = {"HIV_171_5000.fas"};
-		String[] files = {"HIV_70_500.fas", "HIV_100_500.fas","HCV_247_500.fas"};
+		String[] files = {"HIV_171_5000.fas"};
+		//String[] files = {"HIV_70_500.fas", "HIV_100_500.fas","HCV_247_500.fas"};
 		
 		for (int i = 0; i < files.length; i++) {
 			System.out.println ("Running "+files[i]);
