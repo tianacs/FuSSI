@@ -15,3 +15,8 @@ RNAfold output required 2 sec: 16:46:27
 Running complete HIV sequences 
 Beging 17:19:53
 RNAfold 
+
+
+***********************************************8888
+Mauger250 rerun
+Representative Sequences: Tue, Oct 23 2018 21:34:13
