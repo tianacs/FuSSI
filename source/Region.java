@@ -21,15 +21,15 @@ public class Region {
 		int no_seq = 0;
 		for (Sequence item : MSA) {
 			String sub_seq = item.getSequence().substring (structure.getOpen(), structure.getClose()+1);
-			if (!(undetermined (sub_seq))){									//skip sequences consisting of only '-' undetermined characters in the specified region
+			//if (!(undetermined (sub_seq))){									//skip sequences consisting of only '-' undetermined characters in the specified region
 				if (extracts.get (sub_seq) == null) {
 					extracts.put (sub_seq, item.getName ());
 					no_seq++;
 				}
-			}
-			else {
+			//}
+			//else {
 				//System.out.println (item.getName()+" conists only of undetermined characters");
-			}
+			//}
 		}
 		
 		//For RAxML the first line needs to specify the number of sequences + the length of the sequences (eg. 98 52)
