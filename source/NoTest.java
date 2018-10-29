@@ -91,11 +91,11 @@ public class NoTest {
 			System.exit (0);
 		}
 		ArrayList<String> listy = new ArrayList<String> ();
-		String line = input.nextLine ();
+		String line2 = input.nextLine ();
 		while (input.hasNextLine()) {
-			line = input.nextLine ();
-			if (!(line.equals (""))) {
-				String[] l = line.split (",");
+			line2 = input.nextLine ();
+			if (!(line2.equals (""))) {
+				String[] l = line2.split (",");
 				listy.add (l[1]);
 			}
 		}
@@ -134,6 +134,7 @@ public class NoTest {
 		for (int i = 0; i < open.length; i++) {
 			nocheck.add (new Duo(open[i], close[i]));
 		}
+		nocheck.add (new Duo(5170, 5181));
 		//************************************************************
 		
 		int count = 0;
@@ -176,7 +177,7 @@ public class NoTest {
 				System.out.println (e.toString());
 				e.printStackTrace();
 			}
-			System.out.println (consensus_structure);*/
+			System.out.println (consensus_structure);
 			//prepare structure file
 			File structure_file = new File ("consensus_structure_"+run_ID+".txt");
 			try (BufferedWriter bw = new BufferedWriter (new FileWriter (structure_file))) {
