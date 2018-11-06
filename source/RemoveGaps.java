@@ -1,5 +1,6 @@
-// Class/Program/method to remove gaps from an alignment file
-// 04/09/2018]
+// Remove gaps from an alignment file or from a single sequence String containing gaps
+// 04/09/2018
+// Tiana Schwab
 
 // Remove gaps from a single sequence (provided as String) = RemoveGaps.remove (String entry)
 // Remove gaps from all sequences in a list (ArrayList) = RemoveGaps.remove (ArrayList<String> entry)

@@ -1,5 +1,7 @@
 // Sequence object
 // 05 September 2018
+// Tiana Schwab
+
 
 public class Sequence {
 	private String name;

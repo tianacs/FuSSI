@@ -1,5 +1,12 @@
-// Finding structures to test in whole genome prediction
+// Identify substructures in whole genome structure prediction
+// 30 September 2018
+// Tiana Schwab
 
+/*	input: supply a string of a structure in dotbracket notation (FindStr.subdivide (String structure))
+	output: ArrayList<Duo> of positions of substructures in the structure 
+
+	convertToGapped (ArrayList<Duo> structure_bounds, ArrayList<Integer> alignment_pos): converts structure positions to the positions in the alignment
+*/
 import java.util.*;
 
 public class FindStr {

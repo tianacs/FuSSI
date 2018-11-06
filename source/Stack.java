@@ -1,5 +1,6 @@
 // Stack datastructure 
 // based off Chapter 15 Absolute Java by Walter Savitch
+// Tiana Schwab
 
 import java.util.NoSuchElementException;
 import java.util.ArrayList;

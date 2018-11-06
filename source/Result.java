@@ -1,4 +1,8 @@
 // Objects to record the AIC of the NS and the 16S model for each duo tested
+// 19 October 2017
+// Tiana Schwab
+
+// for a structure (defined by the position it spans in the alignment), calculate its AIC values and the relativeLikelihood of the 16S model
 
 import java.util.*;
 import java.io.*;
@@ -83,6 +87,7 @@ class SortbyLikelihood implements Comparator<Result>{
 		else 
 			return -1;
 		*/
+		// sort results by their relativeLikelihoods scaled by the size of the structure
 		if (a.getScaled() == b.getScaled()) 
 			return 0;
 		else if (a.getScaled() < b.getScaled())

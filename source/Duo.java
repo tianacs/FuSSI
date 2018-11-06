@@ -1,4 +1,6 @@
-// Set datastructure
+// Tuple object to track pairs of brackets
+// 30 September 2018
+// Tiana Schwab
 
 import java.util.*;
 

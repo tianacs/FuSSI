@@ -1,4 +1,6 @@
-//FuSSI
+// FuSSI - Identifying Biologically Functional Secondary Structure Elements using Complementary Coevolution
+// 23 October 2018
+// Tiana Schwab
 
 import java.util.*;
 import java.io.*;
@@ -9,12 +11,6 @@ import java.io.*;
 3) extracts.fas
 3) structure.txt
 4) RAxML output files *.NS and *.16S
-5) [Likelihoods.txt]
-
-TO DO:
-1) Test MSA for
-	- no duplicate/identical names
-	- no illegal characters in taxon names: (tabulators, carriage returns, spaces, ":", ",", "(", "(", ";", "]", "[", "'")
 
 */
 
@@ -42,7 +38,7 @@ public class FuSSI {
 			MSA_location = args[0];
 			run_ID = args[1];
 		} catch (ArrayIndexOutOfBoundsException e) {
-			System.out.println ("FuSSI: specify <location>/<filename> <run_ID> (optional) max_structure_size");
+			System.out.println ("FuSSI: specify <location>/<filename> <run_ID> (optional)<max_structure_size>");
 			System.exit (0);
 		}		
 		ArrayList<Sequence> MSA = Import.readin(MSA_location);
@@ -75,7 +71,6 @@ public class FuSSI {
 		//select representative sequences to be submitted to RNAfold	
 		UPGMA tree = new UPGMA (MSA);
 
-		//allow user to specify groups
 		int groups = 5;
 		int[] sequences = tree.findDivergent (groups);
 		System.out.println ("Most divergent sequences identified. ");

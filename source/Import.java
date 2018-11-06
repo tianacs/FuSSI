@@ -1,5 +1,6 @@
-// import sequences from a fasta file and create a list of Sequence objects
+// Import sequences from a fasta file and create a list of Sequence objects
 // 05 September 2018
+// Tiana Schwab
 
 /* Import.readin creates a list of sequence objects. Each individual sequence object contains the name of the sequence (item.getName()) and the sequence (item.getSequence())
 */

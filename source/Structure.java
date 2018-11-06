@@ -1,4 +1,6 @@
-// Creating a structure object
+// Structure object
+// 26 September 2018
+// Tiana Schwab
 
 public class Structure extends Sequence {
 	private String structure;
@@ -6,9 +8,6 @@ public class Structure extends Sequence {
 	private int pos0 = -1;
 	private int pos1 = -1;
 
-	// other methods needed:
-		// copy constructor
-		// equals method
 //#############################################################################
 	public Structure (String seq) {
 		super (seq);
@@ -20,16 +19,6 @@ public class Structure extends Sequence {
 		this.len = getSequence().length ();
 		this.structure = null;
 	}
-//#############################################################################
-	/*public Structure subStructure () {
-		String sub_name = this.getName()+" sub";
-		String sub_seq = this.getSequence().substring (1, this.getSequence().length ()-1);
-		String sub_struc = this.structure.substring (1, this.structure.length ()-1);
-		//System.out.println (sub_name+"\n"+sub_seq+"\n"+sub_struc);
-		Structure sub = new Structure (sub_name, sub_seq);
-		sub.setStructure (sub_struc);
-		return sub;
-	}*/
 
 //#############################################################################
 	

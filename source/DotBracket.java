@@ -1,7 +1,8 @@
 // Predicting the secondary structure of a sequence
 // 04 September 2018
+// Tiana Schwab
 
-/*	Input: 	- String containing location and file name of sequence to predict
+/*	Input: 	String containing location and file name of sequence to predict
 	Output:	A structure file containing (the name,) sequence and structure of the sequnce supplied
 	
 	ISSUES	- files containing just a sequence do not work because predict () will not find a > to find the sequence

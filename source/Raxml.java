@@ -1,10 +1,6 @@
-// Running RAxML 
+// Running RAxML and extracting likelihood values from RAxML_info.* files
 // 07 September 2018
-
-/* QUESTIONS
-1) Are the likelihood scores outputted by raxml loglikelihoods? (seem to be with the size)
-2) get program to wait for raxml to finish entirely
-*/
+// Tiana Schwab
 
 import java.io.*;
 import java.util.ArrayList;
@@ -79,16 +75,6 @@ public class Raxml {
 		//double S16 = getValue("RAxML_info.16S");
 		//double diff = S16-NS;
 		System.out.println (NS);
-		/*+" "+S16);
-		System.out.println ("ln-ln: "+diff);
-		System.out.println ("actual ratio: "+Math.exp(diff));;
-		
-		System.out.println ("actual ratio: "+Math.exp(S16)/Math.exp(NS));*/
-		
-		
-		
-		
-		//AIC (getValue ("RAxML_info.NS"), getValue("RAxML_info.16S"));
-
+	
 	}
 }

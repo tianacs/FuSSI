@@ -1,8 +1,9 @@
-// selecting representative sequences to predict structures
+// Selecting representative sequences to predict structures using a UPGMA clustering method
+// 27 September 2018
+// Tiana Schwab
 
-/* Options: 1) select a specific sequence -> GUI show names
-			2) select five most divergent sequences using a UPGMA
-*/
+// Options to include in future: select a specific sequence -> GUI show names
+
 
 import java.util.ArrayList;
 import java.io.*;

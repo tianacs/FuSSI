@@ -1,5 +1,6 @@
 // Translate a DNA sequence to RNA or RNA to DNA
 // 04/09/2018
+// Tiana Schwab
 
 /*	
 Input:	- A sequence as a string + specify DNAtoRNA or RNAtoDNA
