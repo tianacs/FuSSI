@@ -1,7 +1,7 @@
 # FuSSI
 Functional Secondary Structure Identifier (BMedSci (Hons) Thesis)
 
-To run, FuSSI requires the following programs:
+To run, FuSSI requires:
 - RNAalifold and RNAfold from the ViennaRNA package
 https://www.tbi.univie.ac.at/RNA/index.html#download
 - RAxML 
